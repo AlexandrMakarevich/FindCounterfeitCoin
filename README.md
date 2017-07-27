@@ -1,1 +1,1 @@
-# FindCounterfeitCoin
+In this project, the solution to the next problem is realized - we have 8 coins, one of them is false. The counterfeit coins are lighter than the present one. It is necessary to find a counterfeit coin for the least amount of weighing.
