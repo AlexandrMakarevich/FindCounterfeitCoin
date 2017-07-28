@@ -5,10 +5,8 @@ import com.google.common.base.Objects;
 public class Coin {
 
     private int weightCoin;
-    private int id;
 
-    public Coin(int id, int weightCoin) {
-        this.id = id;
+    public Coin(int weightCoin) {
         this.weightCoin = weightCoin;
     }
 
@@ -16,8 +14,16 @@ public class Coin {
         return weightCoin;
     }
 
-    public int getId() {
-        return id;
+    public Coin findOneFakeCoinOfThree(Coin firstCoin, Coin secondCoin, Coin third) {
+        int firstCoinWeight = firstCoin.getWeightCoin();
+        int secondCoinWeight = secondCoin.getWeightCoin();
+        if (firstCoinWeight > secondCoinWeight) {
+            return secondCoin;
+        }
+        if (firstCoinWeight < secondCoinWeight) {
+            return firstCoin;
+        }
+        return third;
     }
 
     @Override
