@@ -27,4 +27,6 @@ public class Main {
             System.out.println("All coins have equal weight.No fake coin!");
         }
     }
+
+
 }
